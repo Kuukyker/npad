@@ -4,13 +4,87 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <title>NPAD</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+
+  <nav>
+    <span id='nav_logo-and-logo-text-wrapper'>
+      <img id='nav_logo' src='./logo.png' alt='logo'>
+      <span id='nav_logo-text'>NPAD</span>
+    </span>
+    <ul id='nav_links-wrapper'>
+      <li id='nav_home'>Home</li>
+      <li id='nav_standings'>Standings</li>
+      <li id='nav_stats'>Stats</li>
+    </ul>
+    <div id='nav_hamburger'> <span class='material-icons-round'>menu</span></div>
+  </nav>
+
+  <div class='hidden' id='sidebar-nav'>
+    <ul id='sidebar-nav_links-wrapper'>
+      <li id='sidebar-nav_close'><span class='material-icons-round'>close</span></li>
+      <li id='sidebar-nav_home'>Home</li>
+      <li id='sidebar-nav_standings'>Standings</li>
+      <li id='sidebar-nav_stats'>Stats</li>
+    </ul>
+  </div>
+
+  <div class='page' id='home-page'>
+    <div id='hero-section'>
+      <img id='hero-section_logo' src='./logo.png' alt='logo'>
+      <h1>Chips, Cards, Conquer.</h1>
+      <p>It takes skills to have the privilege of luck.</p>
+      <div class='discord-button'>
+        <img src='https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e3d7f4ef6498ac018f2c55_Symbol.svg'
+          alt='discord-logo'>
+        <div class='discord-button_text'>Join Our Discord</div>
+      </div>
+    </div>
+
+    <div id='about-section'>
+      <h1 id='about-section_title'>About</h1>
+      <div id='about-section_content-wrapper'>
+        <p>NPAD stands for National Poker Association of Discord, every season, teams of 3 people are facing each other
+          in a league competition. Captains from each team decide who to send and 2 players carry their team's flag and
+          try to take the win home. They play head's up poker meaning one person against another at a table. At the end
+          of the regular season the best teams qualify in the playoffs. The one team that wins gains legendary status
+          forever.</p>
+      </div>
+    </div>
+    <div id='contact-section'></div>
+  </div>
+
+  <div class='page hidden' id='standings-page'>
+    <h1>Standings</h1>
+    <p>Here are the statistics of our current players.</p>
+    <div id='standings-search-bar-wrapper'>
+      <input type='text' id='standings-search-bar' placeholder='Search for a team...'>
+      <span class='material-icons-round' id='standings-icon'>search</span>
+    </div>
+    <div id='standings-table-container'></div>
+  </div>
+
+
+  <div class='page hidden' id='stats-page'>
+    <h1>Stats</h1>
+    <p>Here are the statistics of our current players.</p>
+    <div id='stats-search-bar-wrapper'>
+      <input type='text' id='stats-search-bar' placeholder='Search for a player...'>
+      <span class='material-icons-round' id='search-icon'>search</span>
+    </div>
+    <div id='stats-table-container'></div>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2023 NPAD. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
+
 
 </html>
