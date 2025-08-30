@@ -1,0 +1,12 @@
+HTML / CSS: Only - and _ while letters are low-case
+<parent name>_<child name word #1>-<child name word #2>
+
+JS: $ and _ and case sensitive letters
+Objects: Upper-case first letter
+normalVariables: Upper-case first letter of each word except for the first one
+run$AtLine$(function, number): Functions, $ representing each parameter
+$domElement: $ at start
+CONSTANT_VARIABLES: All upper-case, separated by _
+
+
+
